@@ -1,8 +1,14 @@
+import { ProductList } from "@/src/components/ProductList";
+import { getProducts } from "@/src/utils/api";
 
-export default function Home() {
+export default async function Home() {
+
+    const { logo, products } = await getProducts()
   return (
-    <div>
-        Hello world
-    </div>
+      <>
+          <main>
+              <ProductList products={products}/>
+          </main>
+      </>
   );
 }
