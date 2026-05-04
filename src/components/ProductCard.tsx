@@ -1,8 +1,9 @@
 "use client"
 
-import type { Product } from "@/src/types/apiTypes";
 import styles from './ProductCard.module.css';
 import { useCart } from "@/src/contexts/CartContext";
+import { getEffectivePrice } from "@/src/utils/price";
+import type { Product } from "@/src/types/apiTypes";
 
 type ProductCardProps = {
     product: Product
@@ -38,13 +39,13 @@ export const ProductCard = ( { product }: ProductCardProps ) => {
         <div className={styles.priceRow}>
             {promotion ? (
                 <>
-                    <span className={styles.priceOriginal}>{price} zł</span>
+                    <span className={styles.priceOriginal}>${price.toFixed(2)}</span>
                     <span className={styles.priceDiscounted}>
-                        {Math.round(price * (1 - promotion.percentage / 100))} zł
+                        ${getEffectivePrice(product).toFixed(2)}
                     </span>
                 </>
             ) : (
-                <span className={styles.price}>{price} zł</span>
+                <span className={styles.price}>${price.toFixed(2)}</span>
             )}
         </div>
         <button

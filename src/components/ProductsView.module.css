@@ -1,4 +1,20 @@
 .productsView {
-    /*background-color: var(--color-surface-muted);*/
     background-color: var(--color-surface-muted);
+    min-height: 100vh;
+}
+
+.main {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: var(--space-lg);
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: var(--space-lg);
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
 }
