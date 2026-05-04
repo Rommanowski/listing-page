@@ -13,6 +13,7 @@
   padding: var(--space-md) var(--space-lg);
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-lg);
 }
 
