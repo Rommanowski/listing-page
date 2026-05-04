@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { Header } from "./Header";
 import { ProductList } from "./ProductList";
+import { CartProvider } from "@/src/contexts/CartContext";
 import type { Image, Product } from "@/src/types/apiTypes";
 import styles from './ProductsView.module.css'
 
@@ -25,11 +26,13 @@ export const ProductsView = ({ logo, products }: ProductsViewProps) => {
     }, [products, searchQuery]);
 
     return (
-        <div className={styles.productsView}>
-            <Header logo={logo} onSearch={setSearchQuery} />
-            <main>
-                <ProductList products={filteredProducts} />
-            </main>
-        </div>
+        <CartProvider>
+            <div className={styles.productsView}>
+                <Header logo={logo} onSearch={setSearchQuery} />
+                <main>
+                    <ProductList products={filteredProducts} />
+                </main>
+            </div>
+        </CartProvider>
     );
 };

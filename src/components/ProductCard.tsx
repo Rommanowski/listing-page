@@ -2,6 +2,7 @@
 
 import type { Product } from "@/src/types/apiTypes";
 import styles from './ProductCard.module.css';
+import { useCart } from "@/src/contexts/CartContext";
 
 type ProductCardProps = {
     product: Product
@@ -10,6 +11,8 @@ type ProductCardProps = {
 export const ProductCard = ( { product }: ProductCardProps ) => {
 
     const { brand, description, id, image, price, promotion, title } = product
+    const { addToCart, addingIds } = useCart()
+    const isAdding = addingIds.has(id)
 
     return (
     <div className={styles.card}>
@@ -44,6 +47,13 @@ export const ProductCard = ( { product }: ProductCardProps ) => {
                 <span className={styles.price}>{price} zł</span>
             )}
         </div>
-        <button className={styles.addButton}>Add to cart</button>
+        <button
+            className={styles.addButton}
+            onClick={() => addToCart(product)}
+            disabled={isAdding}
+            type="button"
+        >
+            {isAdding ? "Adding..." : "Add to cart"}
+        </button>
     </div>)
 }

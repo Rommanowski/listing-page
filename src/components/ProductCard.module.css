@@ -30,6 +30,12 @@
     background: var(--color-primary-hover);
 }
 
+.addButton:disabled,
+.addButton:disabled:hover {
+    background-color: var(--color-text-muted);
+    cursor: not-allowed;
+}
+
 
 .description {
     font-size: var(--font-size-sm);

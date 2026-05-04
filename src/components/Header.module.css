@@ -52,3 +52,26 @@
     width: 22px;
     height: 22px;
 }
+
+.cartIconWrapper {
+    position: relative;
+    display: inline-flex;
+}
+
+.cartBadge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    background-color: var(--color-primary);
+    color: var(--color-text-inverse);
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}

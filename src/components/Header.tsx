@@ -3,6 +3,7 @@
 import { ShoppingCartIcon, UserIcon } from "@heroicons/react/24/outline";
 import { SearchBar } from "./SearchBar";
 import styles from "./Header.module.css";
+import { useCart } from "@/src/contexts/CartContext";
 import type { Image } from "@/src/types/apiTypes";
 
 type HeaderProps = {
@@ -11,6 +12,9 @@ type HeaderProps = {
 }
 
 export const Header = ({ logo, onSearch }: HeaderProps) => {
+    const { items } = useCart();
+    const cartCount = items.length;
+
     return (
         <header className={styles.header}>
             <div className={styles.inner}>
@@ -24,9 +28,14 @@ export const Header = ({ logo, onSearch }: HeaderProps) => {
                     <button
                         className={styles.actionButton}
                         type="button"
-                        aria-label="Cart"
+                        aria-label={`Cart, ${cartCount} item${cartCount === 1 ? "" : "s"}`}
                     >
-                        <ShoppingCartIcon className={styles.actionIcon} aria-hidden="true" />
+                        <span className={styles.cartIconWrapper}>
+                            <ShoppingCartIcon className={styles.actionIcon} aria-hidden="true" />
+                            {cartCount > 0 && (
+                                <span className={styles.cartBadge}>{cartCount}</span>
+                            )}
+                        </span>
                     </button>
                 </div>
             </div>
