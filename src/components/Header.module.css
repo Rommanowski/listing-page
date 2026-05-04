@@ -1,77 +1,77 @@
 .header {
-    background-color: var(--color-surface);
-    border-bottom: 1px solid var(--color-border);
-    box-shadow: var(--shadow-sm);
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .inner {
-    max-width: var(--container-max);
-    margin: 0 auto;
-    padding: var(--space-md) var(--space-lg);
-    display: flex;
-    align-items: center;
-    gap: var(--space-lg);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
 }
 
 .logo {
-    height: 36px;
-    width: auto;
-    flex-shrink: 0;
+  height: 36px;
+  width: auto;
+  flex-shrink: 0;
 }
 
 .actions {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-shrink: 0;
 }
 
 .actionButton {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-xs);
-    padding: var(--space-sm) var(--space-md);
-    background: transparent;
-    border: none;
-    color: var(--color-text);
-    font-size: var(--font-size-sm);
-    font-family: inherit;
-    cursor: pointer;
-    border-radius: var(--radius-md);
-    transition: background-color 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background: transparent;
+  border: none;
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  transition: background-color 0.15s ease;
 }
 
 .actionButton:hover {
-    background-color: var(--color-surface-muted);
+  background-color: var(--color-surface-muted);
 }
 
 .actionIcon {
-    width: 22px;
-    height: 22px;
+  width: 22px;
+  height: 22px;
 }
 
 .cartIconWrapper {
-    position: relative;
-    display: inline-flex;
+  position: relative;
+  display: inline-flex;
 }
 
 .cartBadge {
-    position: absolute;
-    top: -6px;
-    right: -8px;
-    min-width: 18px;
-    height: 18px;
-    padding: 0 5px;
-    background-color: var(--color-primary);
-    color: var(--color-text-inverse);
-    border-radius: var(--radius-full);
-    font-size: var(--font-size-xs);
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }

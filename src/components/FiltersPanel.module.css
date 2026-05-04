@@ -1,128 +1,128 @@
 .panel {
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: var(--space-lg);
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-lg);
-    align-self: start;
-    top: calc(68px + var(--space-md));
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  align-self: start;
+  top: calc(68px + var(--space-md));
 }
 
 .headerRow {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .title {
-    margin: 0;
-    font-size: var(--font-size-lg);
-    font-weight: 600;
+  margin: 0;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
 }
 
 .resetButton {
-    background: transparent;
-    border: none;
-    color: var(--color-primary);
-    font-size: var(--font-size-sm);
-    font-family: inherit;
-    cursor: pointer;
-    padding: 0;
+  background: transparent;
+  border: none;
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
 }
 
 .resetButton:hover {
-    color: var(--color-primary-hover);
-    text-decoration: underline;
+  color: var(--color-primary-hover);
+  text-decoration: underline;
 }
 
 .section {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
 }
 
 .sectionTitle {
-    margin: 0;
-    font-size: var(--font-size-sm);
-    font-weight: 600;
-    color: var(--color-text);
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
+  margin: 0;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 .select {
-    width: 100%;
-    padding: var(--space-sm) var(--space-md);
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    font-size: var(--font-size-sm);
-    font-family: inherit;
-    color: var(--color-text);
-    cursor: pointer;
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-family: inherit;
+  color: var(--color-text);
+  cursor: pointer;
 }
 
 .select:focus {
-    outline: none;
-    border-color: var(--color-primary);
+  outline: none;
+  border-color: var(--color-primary);
 }
 
 .priceRow {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
 }
 
 .priceInput {
-    flex: 1;
-    min-width: 0;
-    padding: var(--space-sm) var(--space-md);
-    background-color: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    font-size: var(--font-size-sm);
-    font-family: inherit;
-    color: var(--color-text);
+  flex: 1;
+  min-width: 0;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-family: inherit;
+  color: var(--color-text);
 }
 
 .priceInput:focus {
-    outline: none;
-    border-color: var(--color-primary);
+  outline: none;
+  border-color: var(--color-primary);
 }
 
 .priceDash {
-    color: var(--color-text-muted);
-    flex-shrink: 0;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
 }
 
 .checkboxLabel {
-    display: flex;
-    align-items: center;
-    gap: var(--space-sm);
-    font-size: var(--font-size-sm);
-    color: var(--color-text);
-    cursor: pointer;
-    user-select: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  cursor: pointer;
+  user-select: none;
 }
 
 .checkboxLabel input[type="checkbox"] {
-    cursor: pointer;
-    accent-color: var(--color-primary);
+  cursor: pointer;
+  accent-color: var(--color-primary);
 }
 
 .brandList {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
-    max-height: 240px;
-    overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  max-height: 240px;
+  overflow-y: auto;
 }
 
 @media (max-width: 900px) {
-    .panel {
-        position: static;
-        top: auto;
-    }
+  .panel {
+    position: static;
+    top: auto;
+  }
 }

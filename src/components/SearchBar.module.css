@@ -1,61 +1,63 @@
 .searchBar {
-    display: flex;
-    align-items: stretch;
-    flex: 1;
-    max-width: 560px;
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  max-width: 560px;
 }
 
 .inputWrapper {
-    position: relative;
-    flex: 1;
-    display: flex;
-    align-items: center;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 .icon {
-    position: absolute;
-    left: var(--space-md);
-    width: 18px;
-    height: 18px;
-    color: var(--color-text-muted);
-    pointer-events: none;
+  position: absolute;
+  left: var(--space-md);
+  width: 18px;
+  height: 18px;
+  color: var(--color-text-muted);
+  pointer-events: none;
 }
 
 .input {
-    width: 100%;
-    padding: var(--space-sm) var(--space-md) var(--space-sm)
-        calc(var(--space-md) + 18px + var(--space-sm));
-    background-color: var(--color-surface-muted);
-    border: 1px solid var(--color-border);
-    font-size: var(--font-size-sm);
-    font-family: inherit;
-    color: var(--color-text);
-    transition: border-color 0.15s ease, background-color 0.15s ease;
+  width: 100%;
+  padding: var(--space-sm) var(--space-md) var(--space-sm)
+    calc(var(--space-md) + 18px + var(--space-sm));
+  background-color: var(--color-surface-muted);
+  border: 1px solid var(--color-border);
+  font-size: var(--font-size-sm);
+  font-family: inherit;
+  color: var(--color-text);
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
 }
 
 .input:focus {
-    outline: none;
-    border-color: var(--color-primary);
-    background-color: var(--color-surface);
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: var(--color-surface);
 }
 
 .input::placeholder {
-    color: var(--color-text-muted);
+  color: var(--color-text-muted);
 }
 
 .submitButton {
-    padding: 0 var(--space-lg);
-    background-color: var(--color-primary);
-    color: var(--color-text-inverse);
-    border: none;
-    font-size: var(--font-size-sm);
-    font-family: inherit;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.15s ease;
-    flex-shrink: 0;
+  padding: 0 var(--space-lg);
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+  border: none;
+  font-size: var(--font-size-sm);
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  flex-shrink: 0;
 }
 
 .submitButton:hover {
-    background-color: var(--color-primary-hover);
+  background-color: var(--color-primary-hover);
 }
