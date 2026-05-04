@@ -14,3 +14,6 @@
    ```env
    X_API_KEY=you_api_key_here
    API_URL=your_api_url_here
+   ```
+5. **Launch the app**: `npm run dev`
+6. **Open the app**: `http://localhost:3000`
