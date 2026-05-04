@@ -1,9 +1,9 @@
 .card{
     display: flex;
     flex-direction: column;
-    gap: var(--space-sm);
-    margin: 24px;
-    width: 300px;
+    gap: var(--space-xs);
+    width: 100%;
+    /*max-width: 280px;*/
 }
 
 .addButton {
@@ -32,8 +32,14 @@
 
 
 .description {
-    color: var(--color-text-muted);
     font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
 }
 
 .imageWrapper {
