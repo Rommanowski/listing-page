@@ -5,6 +5,7 @@
     padding: var(--space-lg);
     max-width: 900px;          /* ogranicza całkowitą szerokość siatki */
     margin: 0 auto;
+    background-color: var(--color-bg);
 }
 
 /* tablety — 2 kolumny */

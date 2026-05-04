@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { Header } from "./Header";
 import { ProductList } from "./ProductList";
 import type { Image, Product } from "@/src/types/apiTypes";
+import styles from './ProductsView.module.css'
 
 type ProductsViewProps = {
     logo: Image
@@ -24,11 +25,11 @@ export const ProductsView = ({ logo, products }: ProductsViewProps) => {
     }, [products, searchQuery]);
 
     return (
-        <>
+        <div className={styles.productsView}>
             <Header logo={logo} onSearch={setSearchQuery} />
             <main>
                 <ProductList products={filteredProducts} />
             </main>
-        </>
+        </div>
     );
 };
