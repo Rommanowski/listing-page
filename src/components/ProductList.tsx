@@ -11,7 +11,7 @@ export const ProductList = ({ products }: Props) => {
 
     return (
         <div>
-            {products.slice(0, 1).map((product) => (
+            {products.map((product) => (
                 <ProductCard key={product.id} product={product} />
             ))}
         </div>
