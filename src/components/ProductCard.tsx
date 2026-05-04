@@ -29,7 +29,7 @@ export const ProductCard = ( { product }: ProductCardProps ) => {
             )}
         </div>
         <span className={styles.title}>{title}</span>
-        <span>
+        <span className={styles.description}>
         {description}
         </span>
         <div className={styles.priceRow}>
@@ -44,6 +44,6 @@ export const ProductCard = ( { product }: ProductCardProps ) => {
                 <span className={styles.price}>{price} zł</span>
             )}
         </div>
-        <button>Add to cart</button>
+        <button className={styles.addButton}>Add to cart</button>
     </div>)
 }
