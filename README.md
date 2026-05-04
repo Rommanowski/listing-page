@@ -1,9 +1,9 @@
 # Columbus Junior Frontend Developer Assignment - Jakub Romanowski
 
 ## Tech Stack
-* [cite_start]**Framework**: Next.js (create-next-app)
-* [cite_start]**Language**: TypeScript (types generated from schema)
-* [cite_start]**Styling**: Classic CSS / CSS-in-JS (No Tailwind, Material UI, or Chakra UI)
+**Framework**: Next.js (create-next-app)
+**Language**: TypeScript (types generated from schema)
+**Styling**: Classic CSS / CSS-in-JS (No Tailwind, Material UI, or Chakra UI)
 
 ## Getting Started
 
